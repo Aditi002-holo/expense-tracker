@@ -1,5 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-size: 16px;
+    font-family: 'Rajdhani', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    /* border: 1px solid; */
+    text-transform: capitalize;
+    background-color: #202124;
+    color: #ccc;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+.vertical-line {
+    border-right: 5px solid #8DA47E;
+    height: inherit;
+}
+
+.title {
+    padding: 1.5rem;
+}
+
+section {
+    width: 80%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    border: 0.1rem solid #E8EAED;
+    border-radius: 3px;
+}
+
+.budget-section {
+    margin: 1.5rem auto;
+}
+
+.main-section {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-section p {
+    margin-bottom: 1rem;
+}
+
+.form-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    border: 0.1px solid #A9C8C0;
+    background-color: inherit;
+    font-family: inherit;
+    border-radius: 5px;
+    padding: 0.3rem;
+    color: inherit
+}
+
+input::placeholder {
+    color: #ccc;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+#expense {
+    width: 50%;
+}
+
+#amount {
+    width: 20%;
+}
+
+.submit-btn {
+    width: 22%;
+    cursor: pointer;
+    padding: 0.3rem;
+    color: #888;
+    text-transform: uppercase;
+    border: 0.1px solid #A9C8C0;
+    background-color: inherit;
+    font-family: inherit;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.submit-btn:hover {
+    border: 0.1px solid #ccc;
+    background-color:  #A9C8C0;
+    color: #222;
+}
+
+
+

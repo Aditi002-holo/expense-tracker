@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Expense Tracker | Project</title>
+
+    <link rel="icon" type="image/svg" href="./sack-xmark-solid.svg">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <h1 class="title">expense tracker</h1>
+    </header>
+
+    <main>
+        <section class="date-record vertical-line">
+            <div class="today">
+                <h2>today</h2>
+                <h5>14-07-2022</h5>
+            </div>
+            <div class="days-left">
+                <h4>days left</h4>
+                <h5>17</h5>
+            </div>
+
+        </section>
+
+        <section class="budget-section">
+            <h3>budget</h3>
+            <div class="budget-container original">
+                <h4>Original</h4>
+                <p>3000</p>
+            </div>
+            <div class="budget-container current">
+                <h4>Current</h4>
+                <p>3000</p>
+            </div>
+        </section>
+
+        <section class="main-section">
+            <p>enter your expense</p>
+            <form class="expense-form">
+                <div class="form-content">
+                    <input type="text" id="expense" placeholder="chocolates">
+                    <input type="number" id="amount" placeholder="100">
+                    <button type="submit" class="submit-btn">submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
