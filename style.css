@@ -23,6 +23,8 @@ body {
     text-transform: capitalize;
     background-color: #202124;
     color: #ccc;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -157,6 +159,32 @@ input::placeholder {
 
 .expense-item button {
     padding: 5px 10px;
+}
+
+@media(min-width: 475px) {
+    header {
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+    main {
+        width: 550px;
+        margin: 0 auto;
+    }
+
+    section {
+        border-radius: 0.5rem;
+    }
+
+    .main-section {
+        font-size: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    input::placeholder {
+        font-size: 1rem;
+        padding: 5px;
+    }
 }
 
 
