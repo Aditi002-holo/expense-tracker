@@ -2,6 +2,8 @@
 
 - Building an expense tracker with HTML, CSS & JS
 
+- [Solution URL - In Progress](https://aditi002-holo.github.io/expense-tracker/)
+
 ## Problem Statement
 
 Record the expenses of the user with the given budget.
