@@ -3,6 +3,7 @@
 
 :root {
     --olive-green: #8DA47E;
+    --opal: #A9C8C0;
 }
 
 * {
@@ -19,7 +20,6 @@ body {
     align-items: center;
     text-align: center;
     margin: 5px;
-    /* border: 1px solid; */
     text-transform: capitalize;
     background-color: #202124;
     color: #ccc;
@@ -27,6 +27,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
+}
+
+h4 {
+    font-size: 1.1rem;
+    line-height: 1.5;
 }
 
 .vertical-line {
@@ -40,6 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 
 section {
     width: 80%;
+    height: auto;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -54,21 +60,24 @@ section {
 }
 
 button {
-    width: 25%;
     cursor: pointer;
     padding: 0.3rem;
     color: #888;
     text-transform: uppercase;
-    border: 0.1px solid #A9C8C0;
+    border: 0.1px solid var(--opal);
     background-color: inherit;
     font-family: inherit;
     font-weight: bold;
     border-radius: 5px;
 }
 
+.submit-btn, .edit-budget {
+    width: 25%;
+}
+
 button:hover {
     border: 0.1px solid #ccc;
-    background-color:  #A9C8C0;
+    background-color: var(--opal);
     color: #222;
 }
 
@@ -96,7 +105,7 @@ button:hover {
 }
 
 input {
-    border: 0.1px solid #A9C8C0;
+    border: 0.1px solid var(--opal);
     background-color: inherit;
     font-family: inherit;
     border-radius: 5px;
@@ -118,24 +127,38 @@ input::placeholder {
     width: 20%;
 }
 
-/* .submit-btn {
-    width: 22%;
-    cursor: pointer;
-    padding: 0.3rem;
-    color: #888;
-    text-transform: uppercase;
-    border: 0.1px solid #A9C8C0;
-    background-color: inherit;
-    font-family: inherit;
-    font-weight: bold;
-    border-radius: 5px;
-} */
+.expense-container {
+    width: 85%;
+    height: auto;
+    margin: 1.5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 
-/* .submit-btn:hover {
-    border: 0.1px solid #ccc;
-    background-color:  #A9C8C0;
-    color: #222;
-} */
+.expense-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.expense-item p {
+    width: 50%;
+    padding: 1rem 0.75rem;
+}
+
+.expense-item .amount {
+    width: 30%;
+}
+
+.expense-item button {
+    padding: 5px 10px;
+}
+
+
 
 
 
